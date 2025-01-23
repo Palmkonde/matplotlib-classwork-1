@@ -9,4 +9,5 @@ point = np.genfromtxt('points.csv', delimiter=',')
 distance = np.genfromtxt('distances.csv', delimiter=',')
 
 if __name__ == "__main__":
-    pass
+    plt.scatter(point[:, 0], point[:, 1], c=distance)    
+    plt.show()
