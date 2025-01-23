@@ -18,7 +18,14 @@ class PlotGraph:
         plt.show()
         
         logger.info("this is y: %s", y)
+    
+    def f2(self) -> None:
+        y = self.x * np.sin(2 * self.x)
         
+        plt.plot(self.x, y)
+        plt.show()
+
+        logger.info("this is y: %s", y)
     
     def plot(self) -> None:
         pass
@@ -26,4 +33,4 @@ class PlotGraph:
 
 if __name__ == "__main__":
     pg = PlotGraph(range=(-10, 10))
-    pg.f1()
+    pg.f2()
