@@ -26,6 +26,14 @@ class PlotGraph:
         plt.show()
 
         logger.info("this is y: %s", y)
+        
+    def f3(self) -> None:
+        y = np.arctan(self.x)
+        
+        plt.plot(self.x, y)
+        plt.show()
+
+        logger.info("this is y: %s", y)
     
     def plot(self) -> None:
         pass
@@ -33,4 +41,4 @@ class PlotGraph:
 
 if __name__ == "__main__":
     pg = PlotGraph(range=(-10, 10))
-    pg.f2()
+    pg.f3()
