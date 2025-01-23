@@ -21,7 +21,7 @@ class PlotGraph:
     
     def f1(self) -> None:
         y = np.power(self.x, 2) 
-        fmt = "g"
+        fmt = "g-*"
         
         plt.plot(self.x, y, fmt, label="x^2")
         
@@ -29,7 +29,7 @@ class PlotGraph:
     
     def f2(self) -> None:
         y = self.x * np.sin(2 * self.x)
-        fmt = "r"
+        fmt = "r--x"
         
         plt.plot(self.x, y, fmt, label="x*sin(2*x)")
 
@@ -37,7 +37,7 @@ class PlotGraph:
         
     def f3(self) -> None:
         y = np.arctan(self.x)
-        fmt = "b"
+        fmt = "b:o"
         
         plt.plot(self.x, y, fmt, label="argtg(x)")
 
